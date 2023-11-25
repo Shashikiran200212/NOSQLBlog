@@ -1,0 +1,25 @@
+{
+  "name": "blog-mark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dompurify": "^3.0.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jsdom": "^22.1.0",
+    "marked": "^10.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.0.1",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
