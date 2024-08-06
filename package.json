@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "devStart": "npx nodemon your-script.js"
-},
-
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
