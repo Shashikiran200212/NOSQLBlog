@@ -13,7 +13,7 @@
       }
     ],
     "env": {
-      "MONGODB_CONNECT_URI": "@mongodb_connect_uri"
+      "MONGODB_CONNECT_URI": "mongodb+srv://shashikiran:WDLPTIO0YSyYgk0x@cluster0.oypoubv.mongodb.net/mymongodb?retryWrites=true&w=majority&appName=Cluster0"
     }
   }
   
