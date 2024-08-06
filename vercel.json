@@ -1,24 +1,10 @@
-
-
-  {
+{
     "version": 2,
     "builds": [
-      {
-        "src": "api/index.js",
-        "use": "@vercel/node",
-        "config": {
-          "maxDuration": 30
-        }
-      }
+      { "src": "server.js", "use": "@vercel/node" }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "api/index.js"
-      }
-    ],
-    "env": {
-        "MONGODB_CONNECT_URI": "mongodb+srv://shashikiran:WDLPTIO0YSyYgk0x@cluster0.oypoubv.mongodb.net/mymongodb?retryWrites=true&w=majority&appName=Cluster0"
-    }
+      { "src": "/(.*)", "dest": "/server.js" }
+    ]
   }
   
