@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node api/index.js",
-    "build": "echo 'No build step required'"
+    "build": "devStart"
   },
   "dependencies": {
     "dompurify": "^3.0.6",
