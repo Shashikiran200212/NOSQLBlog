@@ -33,10 +33,12 @@ const articleSchema = new mongoose.Schema({
 })
 
 articleSchema.pre('validate', function(next) {
+  // adds id to each and every article to make it easy to identify
   if (this.title) {
     this.slug = slugify(this.title, { lower: true, strict: true })
   }
 
+  // sanitizes the markdown field of the document to prevent any potentially malicious HTML code or script injection
   if (this.markdown) {
     this.sanitizedHtml = dompurify.sanitize(this.markdown)
   }

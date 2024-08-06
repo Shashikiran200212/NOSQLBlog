@@ -5,7 +5,7 @@ const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
 
-mongoose.connect('mongodb://localhost/blog')
+mongoose.connect('mongodb://localhost:27017')
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
